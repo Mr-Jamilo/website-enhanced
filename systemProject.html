@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set character encoding and viewport for responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mainStyleSheet.css">
+    <!-- Link to Google Fonts for using the Roboto font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Assignment</title>
+</head>
+<body>
+    <header>
+        <!-- Nav -->
+        <div id="nav">
+            <nav id="nav-items">
+                <ul>
+                    <li><a href="./" class="nav-item">Home</a></li>
+                    <li><a href="projects.html" class="nav-item active">Projects</a></li>
+                    <li><a href="about.html" class="nav-item">About Me</a></li>
+                    <li><a href="contact.html" class="nav-item">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Main content section starts -->
+    <section id="content">
+        <div class="brief">
+            <h1>My System Project</h1>
+            
+            <div class="brief-p">
+                <p>
+                    This project was for my Computer Science A-Level, where we were tasked to come up with an improved version of an existing system and to only use Java.
+                </p>    
+                <p>
+                    I chose to create an ordering system for a local takeaway, which would allow users to order food from the comfort of their own home.
+                </p>    
+                <p>    
+                    This project allowed me to develop my programming skills in Java, and also allowed me to learn about the software development life cycle 
+                    by using both waterfall and agile techniques throughout the development of my system, which I found to be very useful.
+                </p>
+            </div>
+        </div>
+    
+        <div class="system-project-gallery">
+            <div class="image">
+                <a href="images/class-diagram.jpg" target="_blank">
+                    <img src="images/class-diagram.jpg" alt="The class diagram of the system in BlueJ" class="project-image">
+                </a>
+                <div class="desc">
+                    <p>
+                        Coming up with a design for my project; figuring out which features to add and not add was found to be challenging
+                        as I had to consider the time I had to complete the project and also the time I needed to be able to revise for upcoming exams and assessments.
+                        I soon found out that many of the features I wanted to add were not possible mainly due to time constraints, so I had to settle for a more basic design.
+                    </p>
+                </div>
+            </div>
+        
+            <div class="image">
+                <a href="images/login-screen.jpg" target="_blank">
+                    <img src="images/login-screen.jpg" alt="The login page of my system" class="project-image">
+                </a>
+                <div class="desc">
+                    <p>
+                        The system includes a login page where the user can either login or create a new account which they will be redirected
+                        to a different page. Login details are encoded in base64 and stored in a text file, which is read from and/or written to 
+                        when the user logs in or creates an account. 
+                    </p> 
+                    <p>
+                        I would have like to have added a feature where login details are stored in a database,
+                        but I did not because of programming limitations.
+                    </p>
+                </div>
+            </div>
+
+            <div class="image">
+                <a href="images/menu-page.jpg" target="_blank">
+                    <img src="images/menu-page.jpg" alt="The menu page of the ordering system" class="project-image">
+                </a>
+                <div class="desc">
+                    <p>
+                        After logging into the system, customers are greeted with the menu page where they can filter, search and select for the food they want to order
+                        by double clicking on the item in the menu which will automatically add it to their basket which can be shown on the right. They can also remove nav-items
+                        from their basket by double clicking on the item in the basket.
+                    </p>
+                    <p>
+                        I would have liked to add a feature where the user can add a note to their order and, also a feature
+                        where the user can filter the menu by allergens, but I did not because of the time constraints.
+                    </p>
+                </div>
+            </div>
+
+            <div class="image">
+                <a href="images/current-orders-page.jpg" target="_blank">
+                    <img src="images/current-orders-page.jpg" alt="The current orders page of the ordering system" class="project-image">
+                </a>
+                <div class="desc">
+                    <p>
+                        When the user has placed their order, they can then go to the current orders page where they can see their order and the total price of their order.
+                        They may order more food by going back to the menu page and adding more items to their basket.
+                    </p> 
+                    <p>
+                        I would have liked to have made this page a lot nicer but I could not find a way without making my project more complex than it already was.
+                    </p>
+                </div>
+            </div>
+
+            <div class="image">
+                <a href="images/rewards-page.jpg" target="_blank">
+                    <img src="images/rewards-page.jpg" alt="The rewards page of the ordering system" class="project-image">
+                </a>
+                <div class="desc">
+                    <p>
+                        Users can earn points for each completed order which they can then use to get free food, where the more points they have,
+                        the more free food they can get. When a user claims their free food, the food is automatically added to their basket, which they can then order.
+                        This is so that users are encouraged to use the system more often.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Main content section ends -->
+
+    <!-- Footer -->
+    <footer>
+        <p>Jamie Lo - Last Edited: 4/12/23</p>
+    </footer>
+</body>
+</html>

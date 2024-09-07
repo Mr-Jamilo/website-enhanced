@@ -1,0 +1,390 @@
+/*
+Basic styles
+*/
+body{
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: "Roboto";
+}
+
+/*
+Centered, italic text for footer
+*/
+footer{
+    text-align: center;
+    font-style: italic;
+}
+
+/*
+Navbar styles
+*/
+
+#nav{
+    /* Centered navbar with height and padding */
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    padding-bottom: 2%;
+}
+
+ul{
+    /* Styling for unordered list items in navbar */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item{
+    /* Styling for each list item in navbar */
+    display: block;
+
+    text-decoration: underline 0.1em rgba(255, 255, 255, 0);
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+}
+
+.nav-item:hover{
+    /* Styling for when the user hovers over a list item */
+    text-decoration-color: rgba(255, 255, 255, 1);
+    transform: scale(1.5);
+    transition: transform 400ms ease, text-decoration-color 500ms ease;
+}
+
+.nav-item:not(hover){
+    /* Styling for when the user is not hovering over a list item */
+    transform: scale(1);
+    transition: transform 400ms ease;
+}
+
+.active{
+    /* Styling for the active list item */
+    font-weight: bolder;
+}
+
+/*
+Content styles
+*/
+
+#content{
+    /* Centered content with padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* 
+Project
+*/
+
+.projects-p{
+    /* Styling for the projects paragraph */
+    font-size: 1.5em;
+}
+
+.github-link{
+    /* Styling for the github link */
+    color: white;
+    text-decoration: underline 0.1em rgba(255, 255, 255, 0);
+    font-weight: bolder;
+}
+
+.github-link:hover{
+    /* Styling for when the user hovers over the github link */
+    text-decoration-color: rgba(255, 255, 255, 1);
+    transition: text-decoration-color 500ms ease;
+}
+
+.brief{
+    /* Styling for the brief section(includes heading and paragraphs) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-size: 1.25em;
+    margin-bottom: 2%;
+}
+
+.brief-p{
+    /* Styling for the brief div (contains all paragraphs) */
+    width: 50%;
+} 
+
+.brief p{
+    /* Styling for each paragraph in the brief div */
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+
+.project-gallery, .system-project-gallery{
+    /* Styling for the galleries */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project, .image{
+    /* Styling for each image of the projects */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.project:nth-child(even){
+    /* Styling for every two images of projects */
+    flex-direction: row-reverse;
+}
+
+.image:nth-child(even){
+    /* Styling for every two images of projects */
+    flex-direction: row-reverse;
+}
+
+.desc{
+    /* Styling for the description of each image */
+    width: 35%;
+    padding-left: 3%;
+    padding-right: 3%;
+    
+    font-size: 1.2em;
+}
+
+.desc p{
+    /* Styling for each paragraph in the description */
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+
+}
+
+.project-image{
+    /* Styling for each image */
+    width: 400px;
+    height: 300px;
+    max-width: 100%; 
+    margin-right: 5%;
+    
+    border: 5px solid transparent;
+    border-radius: 15px;
+    
+    object-fit: cover;
+}
+
+.project-image:hover{
+    /* Styling for when the user hovers over an image */
+    border: 5px solid white;
+    transition: border 500ms ease;
+}
+
+/* 
+About
+*/
+
+.about-me-p{
+    /* Styling for the about me div*/
+    width: 50%;
+    font-size: 1.8em;
+}
+
+.about-me-p h1{
+    /* Styling for the about me heading */
+    text-align: center;
+}
+
+.about-me-p p{
+    /* Styling for each paragraph in the about me div */
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+
+.contact-link{
+    /* Styling for the contact link */
+    text-decoration: underline 0.1em rgba(255, 255, 255, 0);
+    color: white;
+    font-weight: bolder;
+}
+
+.contact-link:hover{
+    /* Styling for when the user hovers over the contact link */
+    text-decoration-color: rgba(255, 255, 255, 1);
+    transition: text-decoration-color 500ms ease;
+}
+
+.skills-list{
+    /* Styling for the skills list */
+    list-style-type: disc;
+    display: block;
+    padding-left: 15%;
+}
+
+/*
+Contact
+*/
+
+#contact-heading{
+    /* Styling for the contact heading */
+    font-size: 1.8em; 
+}
+
+.form-section{
+    /* Styling for the form div */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+form{
+    /* Styling for the form */
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px;
+    
+    padding: 5%;
+    margin: 2%;
+}
+
+input, textarea{
+    /* Styling for the input and textarea */
+    box-sizing: border-box;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+   
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    outline: none;
+}
+
+input[type = submit]{
+    /* Styling for the submit button */
+    transition-duration: 0.4s;
+}
+
+input[type = submit]:hover{
+    /* Styling for when the user hovers over the submit button */
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+textarea{
+    /* Styling for the textarea */
+    resize: none;
+    height: 200px;
+}
+
+#socials{
+    /* Styling for the socials div */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+#socials p{
+    /* Styling for the socials paragraphs */
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1.3em;
+}
+
+.social-link{
+    /* Styling for the social links */
+    text-decoration: underline 0.1em rgba(255, 255, 255, 0);
+    color: white;
+    font-weight: bolder;
+}
+
+.social-link:hover{
+    /* Styling for when the user hovers over the social links */
+    text-decoration-color: rgba(255, 255, 255, 1);
+    transition: text-decoration-color 500ms ease;
+}
+/*
+Responsiveness
+*/
+
+@media screen and (max-width: 768px){
+    body{
+        padding-top: 10vh;
+    }
+    
+    #nav, ul, .nav-item{
+        flex-direction: column;
+    }
+
+    #nav{
+        margin-bottom:3%;
+    }
+    
+    #content{
+        /* Centers and stacks content with padding */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        margin-top: 10vh;
+    }
+    
+    form{
+        box-sizing: border-box;
+        width: 90vw;
+        max-width: 100%;
+        margin-right: 5%;
+    }
+    
+    input, textarea{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .brief{
+        margin: 2%;
+    }
+
+    .brief-p{
+        width: 80vw;
+    }
+    
+    .project-gallery, .system-project-gallery{
+        /* Centers and stacks galleries */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project, .image, .project:nth-child(even), .image:nth-child(even){
+        /* Centers and stacks images */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects-p{
+        width: 100vw;
+    }
+    
+    .desc{
+        width: 80vw;
+        margin: 5%;
+    }
+}
