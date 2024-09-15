@@ -32,6 +32,7 @@ Nav
     margin-top: 15%;
     height: 5%;
     text-decoration-color: rgba(255, 255, 255, 0);
+    transition: transform 400ms ease, text-decoration-color 500ms ease, opacity 400ms ease;
 }
 
 #nav-items ul{
@@ -47,11 +48,20 @@ Nav
 }
 
 .nav-item:hover{
-    /* Styling for when the user hovers over a list item */
+    /* Styling for when the user hovers over a list item  */
     text-decoration-color: rgba(255, 255, 255, 1);
     transform: scale(1.5);
     transition: transform 400ms ease, text-decoration-color 500ms ease;
 }
+
+#nav-items:hover .nav-item{
+    opacity: 0.5;
+}
+
+#nav-items:hover .nav-item:hover{
+    opacity: 1;
+}
+
 
 .active{
     /* Styling for when the user is on the current page */
@@ -64,6 +74,7 @@ hr.rounded{
     border-radius: 5px;
     margin-left: 15%;
     margin-right: 15%;
+    margin-top: 2%;
 }
 
 /* 

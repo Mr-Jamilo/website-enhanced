@@ -255,7 +255,7 @@ form{
     border: 2px solid white;
     border-radius: 15px;
     
-    padding: 5%;
+    padding: 4%;
     margin: 2%;
 }
 
@@ -296,7 +296,7 @@ textarea{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2%;
+    margin-top: 1%;
 }
 
 #socials p{
